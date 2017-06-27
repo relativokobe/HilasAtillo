@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.hilasatillo.Attendance_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/toPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bayranan: "/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:id="@+id/bayranan"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/toPay"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Players:"
+            android:id="@+id/label"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/bayranan"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13"
+            android:id="@+id/numOfPlayers"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/label"/>
+
+    </RelativeLayout>
+<RelativeLayout
+    android:id="@+id/addP"
+    android:layout_below="@+id/info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Pangan sa player"
+        android:ems="8"
+        android:id="@+id/player"
+        android:layout_margin="10dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/but"
+        android:layout_toRightOf="@id/player"/>
+
+</RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_margin="20dp"
+        android:layout_below="@+id/addP"
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"/>
+
+
+</RelativeLayout>

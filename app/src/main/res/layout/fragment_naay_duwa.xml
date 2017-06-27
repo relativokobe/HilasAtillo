@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:foregroundGravity="center"
+    tools:context="com.example.asus.hilasatillo.NaayDuwa">
+
+ <EditText
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:hint="   Enter Name of Gym   "
+     android:gravity="center"
+     android:layout_margin="5dp"
+     android:id="@+id/Gym"/>
+
+ <EditText
+     android:layout_below="@id/Gym"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:gravity="center"
+     android:layout_margin="5dp"
+     android:id="@+id/Amount"
+     android:hint="     Total Bayranan          "/>
+
+
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/Amount"
+      android:gravity="center"
+     android:layout_marginLeft="50dp"
+      android:id="@+id/ok"
+      android:text="OK"/>
+
+
+</RelativeLayout>
